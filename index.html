@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>Online Survey-maker system</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <h6 class="header--text">Survey-maker</h6>
+        <div class="header__navigation--contents">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Solutions</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Templates</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Resources</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="header__navigation--links">
+          <button class="btn btn--primary" id="loginBtn">Login</button>
+          <button class="btn btn--secondary" id="signupBtn">Sign up</button>
+        </div>
+      </nav>
+      <div class="header__contents">
+        <div class="contents--container">
+          <h6 class="primary--text">
+            Try Online Survey-maker for reasons that match your needs.
+          </h6>
+          <div class="moving__paragraph">
+            <h6 class="secondary--text">
+              Are my customers actually satisfied? |
+            </h6>
+          </div>
+          <button class="btn btn--primary">Get started</button>
+        </div>
+      </div>
+    </header>
+    <div class="social-links">
+      <img src="./dist/img/facebook.svg" alt="" class="social-links__img" />
+      <img src="./dist/img/twitter.svg" alt="" class="social-links__img" />
+      <img src="./dist/img/instagram.svg" alt="" class="social-links__img" />
+    </div>
+    <section class="templates">
+      <div class="contents--container">
+        <h6 class="secondary--text">
+          Start with templates that sweet your needs
+        </h6>
+        <div class="cards">
+          <a href="#" class="card">
+            <h6 class="tertiary--text">New product survey</h6>
+            <img src="./dist/img/img-1.png" alt="" />
+          </a>
+          <a href="#" class="card">
+            <h6 class="tertiary--text">New product survey</h6>
+            <img src="./dist/img/img-1.png" alt="" />
+          </a>
+          <a href="#" class="card">
+            <h6 class="tertiary--text">New product survey</h6>
+            <img src="./dist/img/img-1.png" alt="" />
+          </a>
+        </div>
+        <div class="btn btn--primary">More templates</div>
+      </div>
+    </section>
+    <section class="reasons">
+      <div class="contents--container">
+        <h6 class="secondary--text">
+          Why choose our survey-maker system tools?
+        </h6>
+        <div class="cards">
+          <div class="card">
+            <h6 class="tertiary--text text-u">Easy steps to create survey</h6>
+            <p class="tertiary--text sm">
+              Once you have a clear purpose of your survey in mind and have
+              already have a question for your audience. You just need to get
+              started by filling the form using system tools.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="tertiary--text text-u">Easy steps to create survey</h6>
+            <p class="tertiary--text sm">
+              Once you have a clear purpose of your survey in mind and have
+              already have a question for your audience. You just need to get
+              started by filling the form using system tools.
+            </p>
+          </div>
+        </div>
+        <div class="btn btn--primary">Testimonials</div>
+      </div>
+      <div class="ready-to-go">
+        <h6 class="secondary--text">
+          Ready to go? Try our online survey-maker system tools for yourself.
+        </h6>
+        <div class="btn btn--primary">sign up</div>
+      </div>
+    </section>
+
+    <!-- Login and sign up section -->
+    <div class="authentication-section modal">
+      <div class="modal-container">
+        <img src="./dist/img/close.svg" alt="Close button" class="closeBtn" />
+        <div class="auth-types">
+          <div class="auth-types-login active">
+            <h6 class="auth-login">Login</h6>
+          </div>
+          <div class="auth-types-signup">
+            <h6 class="auth-signup">Sign up</h6>
+          </div>
+        </div>
+        <div class="auth-login-form">
+          <form class="form">
+            <h6 class="tertiary--text">Login</h6>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+              />
+            </div>
+            <button type="submit" class="btn btn--primary">Login</button>
+            <p class="bton-text">
+              Forget password <a href="#" class="forget-p">click here</a>
+            </p>
+          </form>
+        </div>
+        <div class="auth-signup-form">
+          <form class="form">
+            <h6 class="tertiary--text">Sign up</h6>
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" name="name" id="name" autocomplete="off" />
+            </div>
+            <div class="form-group company">
+              <label for="company">Company</label>
+              <select name="company" id="company">
+                <option value="">--Please choose an option--</option>
+                <option value="company #1">Company #1</option>
+                <option value="company #2">Company #2</option>
+                <option value="company #3">Company #3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Confirm Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+              />
+            </div>
+            <button type="submit" class="btn btn--primary">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container--left">
+          <ul class="footer-nav__list">
+            <h6 class="tertiary--text bl">Products</h6>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Create a survey</a
+              >
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Generate survey link</a
+              >
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Review response</a
+              >
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Analyze response</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h6 class="tertiary--text bl">Templates</h6>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Recent templates</a
+              >
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm"
+                >Popular templates</a
+              >
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm">Categories</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <h6 class="tertiary--text bl">Resources</h6>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm">Our blogs</a>
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm">News</a>
+            </li>
+            <li class="footer-nav__list--item">
+              <a href="#" class="footer-nav__list--item-link sm">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container--right">
+          <form class="contact-form form">
+            <h6 class="tertiary--text">Contact us</h6>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="3"
+                cols="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit</button>
+          </form>
+          <div class="prefer-contact">
+            <div class="card">
+              <p class="tertiary--text text-u">
+                you may prefer direct email or call.
+              </p>
+              <p class="tertiary--text">surverymaker@gmail.com</p>
+              <p class="tertiary--text">+25078xxxx</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__container--footer">
+          <p class="tertiary--text">
+            Copyright &copy; 2022 Online survey-maker system
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
