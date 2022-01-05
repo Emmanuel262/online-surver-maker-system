@@ -1,14 +1,16 @@
 const modal = document.querySelector(".modal");
 const loginBtn = document.querySelector("#loginBtn");
-const signBtn = document.querySelector("#signupBtn");
+const signBtn = document.querySelectorAll(".signupBtn");
 const closeBtn = document.querySelector(".closeBtn");
 const authLoginType = document.querySelector(".auth-types-login");
 const authSignupType = document.querySelector(".auth-types-signup");
 const authLoginForm = document.querySelector(".auth-login-form");
 const authSignupForm = document.querySelector(".auth-signup-form");
 
-signBtn.addEventListener("click", () => {
-  modal.classList.add("active");
+signBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.classList.add("active");
+  });
 });
 loginBtn.addEventListener("click", () => {
   modal.classList.add("active");

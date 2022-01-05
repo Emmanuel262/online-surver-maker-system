@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>Online Survey-maker system</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a href="./index.html">
+          <h6 class="header--text">Survey-maker</h6>
+        </a>
+        <div class="header__navigation--contents">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Solutions</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Templates</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+            <li class="navigation__list--item">
+              <h6 class="tertiary--text">Resources</h6>
+              <img src="./dist/img/down-arrow-svgrepo-com.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="header__navigation--links">
+          <button class="btn btn--primary" id="loginBtn">Login</button>
+          <button class="btn btn--secondary signupBtn" id="signupBtn">
+            Sign up
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="dashboard">
+      <div class="dashboard__container">
+        <div class="dashboard-intro">
+          <p class="tertiary--text">
+            Using this dashboard, you have an access to your account and any
+            activity you want to create. Navigate to the left pannel for your
+            needs.
+          </p>
+          <div class="dashboard-intro__profile">
+            <div class="dashboard-intro__profile--img-container">
+              <img
+                src="./dist/img/person-2.webp"
+                alt=""
+                class="dashboard-profile__img"
+              />
+              <p class="quadriple--text profile-name">user-name</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__activities-list">
+          <p class="tertiary--text">Available activities</p>
+          <ul class="dashboard__activities-list--list">
+            <li class="dashboard__activities-list--list-item">
+              <a href="./dashboard.html" class="item-name">Your Account</a>
+            </li>
+            <li class="dashboard__activities-list--list-item">
+              <a href="./dashboard-create-survey.html" class="item-name"
+                >Create survey</a
+              >
+            </li>
+            <li class="dashboard__activities-list--list-item active">
+              <a href="./dashboard-user-surveys.html" class="item-name"
+                >Your surveys</a
+              >
+            </li>
+            <li class="dashboard__activities-list--list-item">
+              <a href="./dashboard-use-templatess.html" class="item-name"
+                >Survey templates</a
+              >
+            </li>
+            <li class="dashboard__activities-list--list-item">
+              <a href="#" class="item-name">Analyze survey</a>
+            </li>
+            <li class="dashboard__activities-list--list-item">
+              <a href="./dashboard-survey-audience.html" class="item-name"
+                >Your Audience</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard__contents user-templates">
+          <div class="dashboard__contents--containers" id="user-dashboard">
+            <h6 class="secondary--text">
+              Start with templates that sweet your needs
+            </h6>
+            <div class="cards">
+              <div class="card">
+                <div class="survey-progress active">
+                  <span>100%</span>
+                </div>
+                <h6 class="tertiary--text">New product survey</h6>
+                <img src="./dist/img/img-1.png" alt="" />
+                <div class="card-btns">
+                  <button class="btn btn--primary">Review</button>
+                  <button class="btn btn--primary">Analyze</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="survey-progress">
+                  <span>65%</span>
+                </div>
+                <h6 class="tertiary--text">New product survey</h6>
+                <img src="./dist/img/img-1.png" alt="" />
+                <div class="card-btns">
+                  <button class="btn btn--primary">Review</button>
+                  <button class="btn btn--primary">Analyze</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="survey-progress">
+                  <span>80%</span>
+                </div>
+                <h6 class="tertiary--text">New product survey</h6>
+                <img src="./dist/img/img-1.png" alt="" />
+                <div class="card-btns">
+                  <button class="btn btn--primary">Review</button>
+                  <button class="btn btn--primary">Analyze</button>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn--primary more-btn">More templates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
